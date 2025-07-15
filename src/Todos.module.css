@@ -1,0 +1,158 @@
+.todosBg {
+  min-height: 100vh;
+  background: #f3f4f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+}
+
+.todosContainer {
+  width: 100%;
+  max-width: 85%;
+  margin: 0 auto;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0 16px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 32px;
+  text-align: left;
+  letter-spacing: 0.2px;
+}
+
+.todosList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: flex-start;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(60, 60, 120, 0.10);
+  padding: 24px 28px 20px 24px;
+  min-height: 60px;
+  box-sizing: border-box;
+  position: relative;
+  transition: box-shadow 0.18s, transform 0.18s;
+  width: 31%;
+  margin-bottom: 0;
+  border: none;
+}
+
+@media (max-width: 900px) {
+  .todoItem {
+    width: 100%;
+  }
+  .todosList {
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+
+.todoItem:hover {
+  box-shadow: 0 6px 24px rgba(60, 60, 120, 0.13);
+  transform: translateY(-2px) scale(1.012);
+}
+
+.completed {
+  opacity: 0.7;
+}
+
+.todoCheckbox {
+  margin-right: 18px;
+  width: 22px;
+  height: 22px;
+  accent-color: #27ae60;
+  flex-shrink: 0;
+}
+
+.todoContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.todoTitle {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #222;
+  margin-bottom: 2px;
+  text-decoration: none;
+}
+
+.completed .todoTitle {
+  text-decoration: line-through;
+  color: #27ae60;
+}
+
+.todoDescription {
+  color: #7a7a7a;
+  font-size: 1rem;
+  margin-left: 0;
+  margin-top: 0;
+  white-space: pre-line;
+}
+
+.completed .todoDescription {
+  color: #b0b0b0;
+}
+
+.todoActions {
+  display: flex;
+  gap: 10px;
+  margin-left: 18px;
+  align-items: center;
+}
+
+.iconBtn {
+  background: none;
+  border: none;
+  padding: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background 0.15s;
+}
+
+.iconBtn:hover {
+  background: #f3f4f8;
+}
+
+.editIcon {
+  color: #2563eb;
+  font-size: 1.2rem;
+}
+
+.deleteIcon {
+  color: #e02d2d;
+  font-size: 1.2rem;
+}
+
+.todosEmpty {
+  text-align: center;
+  color: #b0b0b0;
+  margin-top: 18px;
+  font-size: 1.1rem;
+  user-select: none;
+} 
