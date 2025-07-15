@@ -93,7 +93,7 @@ function App() {
         <div className={styles.navOuter}>
           <span className={styles.brand}>
           
-            TODOMAKER
+            TODOMASTER
           </span>
           <div className={styles.navLinks}>
             <button
